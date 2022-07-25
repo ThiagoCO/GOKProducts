@@ -1,0 +1,6 @@
+framework module Pods_GOKProdutsTests {
+  umbrella header "Pods-GOKProdutsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
