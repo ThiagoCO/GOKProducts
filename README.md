@@ -7,7 +7,7 @@ Aplicativo iOS que tem como objetivo acessar a API que simula a home do aplicati
 
 ## Screenshots
 
-<img src="https://ibb.co/1zy01Q6" height="400" width="200">     
+<img src="https://i.ibb.co/Y0nNmQZ/Captura-de-Tela-2022-07-25-a-s-12-14-42.png" height="400" width="200">     
 
 
 ## API
