@@ -13,6 +13,9 @@ class HomeProductsPresenterFake: HomeProductsPresentationLogic {
     var isHideLoadingCalled = false
     var isErrorCalled = false
     var isSuccessCalled = false
+    var isDetailCalled = false
+    
+    var detailModel: HomeProductsDetailModel?
     
     func presentScreenLoading() {
         isLoadingCalled = true
@@ -30,5 +33,9 @@ class HomeProductsPresenterFake: HomeProductsPresentationLogic {
         isSuccessCalled = true
     }
     
+    func presentDetails(detailsModel: HomeProductsDetailModel) {
+        isDetailCalled = true
+        self.detailModel = detailsModel
+    }
     
 }

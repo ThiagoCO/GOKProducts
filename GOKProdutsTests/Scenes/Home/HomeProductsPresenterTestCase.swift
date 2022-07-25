@@ -41,5 +41,10 @@ class HomeProductsPresenterTestCase: XCTestCase {
         sut.presentProducts(homeModel: HomeProductsModel.dummy())
         XCTAssertTrue(viewControllerFake.isDisplayHome)
     }
+    
+    func testPresentDetail() {
+        sut.presentDetails(detailsModel: HomeProductsDetailModel(cash: Cash(title: "", bannerURL: "", description: "")))
+        XCTAssertTrue(viewControllerFake.isDisplayDetails)
+    }
 }
     

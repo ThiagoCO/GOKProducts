@@ -17,6 +17,20 @@
 		DD4CD2B5288DAC4E0068CD93 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4CD2B2288DAAC90068CD93 /* UIImage+Utils.swift */; };
 		DD4CD2B6288DAC520068CD93 /* XCTests+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4CD2AD288DA8E30068CD93 /* XCTests+Utils.swift */; };
 		DD4CD2B7288DAC560068CD93 /* HomeProductsModel+Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4CD2AE288DA8E30068CD93 /* HomeProductsModel+Dummy.swift */; };
+		DDC2E73A288EFD1F003EE45B /* HomeProductsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2E739288EFD1F003EE45B /* HomeProductsDetailView.swift */; };
+		DDC2E73E288F0378003EE45B /* HomeProductsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2E73D288F0378003EE45B /* HomeProductsDetailViewController.swift */; };
+		DDC2E740288F045F003EE45B /* HomeProductsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2E73F288F045F003EE45B /* HomeProductsRouter.swift */; };
+		DDC2E742288F0B9F003EE45B /* HomeProductsDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2E741288F0B9F003EE45B /* HomeProductsDetailModel.swift */; };
+		DDC2E744288F0FF7003EE45B /* HomeProductsDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2E743288F0FF7003EE45B /* HomeProductsDetailRouter.swift */; };
+		DDC2E746288F100D003EE45B /* HomeProductsDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2E745288F100D003EE45B /* HomeProductsDetailInteractor.swift */; };
+		DDC2E748288F1022003EE45B /* HomeProductsDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2E747288F1022003EE45B /* HomeProductsDetailPresenter.swift */; };
+		DDC2E74C288F1F04003EE45B /* HomeProductsDetailModel+Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2E74B288F1F04003EE45B /* HomeProductsDetailModel+Dummy.swift */; };
+		DDC2E74E288F1F60003EE45B /* HomeProductsDetailInteractorFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2E74D288F1F60003EE45B /* HomeProductsDetailInteractorFake.swift */; };
+		DDC2E750288F1F75003EE45B /* HomeProductsDetailPresenterFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2E74F288F1F75003EE45B /* HomeProductsDetailPresenterFake.swift */; };
+		DDC2E752288F1F8F003EE45B /* HomeProductsDetailViewControllerFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2E751288F1F8F003EE45B /* HomeProductsDetailViewControllerFake.swift */; };
+		DDC2E754288F20DF003EE45B /* HomeProductsDetailViewControllerTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2E753288F20DF003EE45B /* HomeProductsDetailViewControllerTestCase.swift */; };
+		DDC2E756288F2400003EE45B /* HomeProductsDetailinteractorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2E755288F2400003EE45B /* HomeProductsDetailinteractorTestCase.swift */; };
+		DDC2E758288F2414003EE45B /* HomeProductDetailPresenterTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2E757288F2414003EE45B /* HomeProductDetailPresenterTestCase.swift */; };
 		DDE534E3288DA3300022C1A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE534E2288DA3300022C1A3 /* AppDelegate.swift */; };
 		DDE534E5288DA3300022C1A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE534E4288DA3300022C1A3 /* SceneDelegate.swift */; };
 		DDE534EC288DA3310022C1A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE534EB288DA3310022C1A3 /* Assets.xcassets */; };
@@ -80,6 +94,20 @@
 		DD4CD2AD288DA8E30068CD93 /* XCTests+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTests+Utils.swift"; sourceTree = "<group>"; };
 		DD4CD2AE288DA8E30068CD93 /* HomeProductsModel+Dummy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeProductsModel+Dummy.swift"; sourceTree = "<group>"; };
 		DD4CD2B2288DAAC90068CD93 /* UIImage+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
+		DDC2E739288EFD1F003EE45B /* HomeProductsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductsDetailView.swift; sourceTree = "<group>"; };
+		DDC2E73D288F0378003EE45B /* HomeProductsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductsDetailViewController.swift; sourceTree = "<group>"; };
+		DDC2E73F288F045F003EE45B /* HomeProductsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductsRouter.swift; sourceTree = "<group>"; };
+		DDC2E741288F0B9F003EE45B /* HomeProductsDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductsDetailModel.swift; sourceTree = "<group>"; };
+		DDC2E743288F0FF7003EE45B /* HomeProductsDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductsDetailRouter.swift; sourceTree = "<group>"; };
+		DDC2E745288F100D003EE45B /* HomeProductsDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductsDetailInteractor.swift; sourceTree = "<group>"; };
+		DDC2E747288F1022003EE45B /* HomeProductsDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductsDetailPresenter.swift; sourceTree = "<group>"; };
+		DDC2E74B288F1F04003EE45B /* HomeProductsDetailModel+Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeProductsDetailModel+Dummy.swift"; sourceTree = "<group>"; };
+		DDC2E74D288F1F60003EE45B /* HomeProductsDetailInteractorFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductsDetailInteractorFake.swift; sourceTree = "<group>"; };
+		DDC2E74F288F1F75003EE45B /* HomeProductsDetailPresenterFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductsDetailPresenterFake.swift; sourceTree = "<group>"; };
+		DDC2E751288F1F8F003EE45B /* HomeProductsDetailViewControllerFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductsDetailViewControllerFake.swift; sourceTree = "<group>"; };
+		DDC2E753288F20DF003EE45B /* HomeProductsDetailViewControllerTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductsDetailViewControllerTestCase.swift; sourceTree = "<group>"; };
+		DDC2E755288F2400003EE45B /* HomeProductsDetailinteractorTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductsDetailinteractorTestCase.swift; sourceTree = "<group>"; };
+		DDC2E757288F2414003EE45B /* HomeProductDetailPresenterTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductDetailPresenterTestCase.swift; sourceTree = "<group>"; };
 		DDE534DF288DA3300022C1A3 /* GOKProduts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOKProduts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE534E2288DA3300022C1A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDE534E4288DA3300022C1A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				DD4CD2AA288DA8E30068CD93 /* Home */,
+				DDC2E749288F1EA2003EE45B /* Detail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -191,6 +220,41 @@
 				DD4CD2AD288DA8E30068CD93 /* XCTests+Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		DDC2E737288EFC4A003EE45B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2E739288EFD1F003EE45B /* HomeProductsDetailView.swift */,
+				DDC2E73D288F0378003EE45B /* HomeProductsDetailViewController.swift */,
+				DDC2E741288F0B9F003EE45B /* HomeProductsDetailModel.swift */,
+				DDC2E743288F0FF7003EE45B /* HomeProductsDetailRouter.swift */,
+				DDC2E745288F100D003EE45B /* HomeProductsDetailInteractor.swift */,
+				DDC2E747288F1022003EE45B /* HomeProductsDetailPresenter.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		DDC2E749288F1EA2003EE45B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2E74A288F1ED9003EE45B /* Definitions */,
+				DDC2E753288F20DF003EE45B /* HomeProductsDetailViewControllerTestCase.swift */,
+				DDC2E755288F2400003EE45B /* HomeProductsDetailinteractorTestCase.swift */,
+				DDC2E757288F2414003EE45B /* HomeProductDetailPresenterTestCase.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		DDC2E74A288F1ED9003EE45B /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2E74B288F1F04003EE45B /* HomeProductsDetailModel+Dummy.swift */,
+				DDC2E74D288F1F60003EE45B /* HomeProductsDetailInteractorFake.swift */,
+				DDC2E74F288F1F75003EE45B /* HomeProductsDetailPresenterFake.swift */,
+				DDC2E751288F1F8F003EE45B /* HomeProductsDetailViewControllerFake.swift */,
+			);
+			path = Definitions;
 			sourceTree = "<group>";
 		};
 		DDE534D6288DA3300022C1A3 = {
@@ -278,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				DDE5351C288DA4820022C1A3 /* Home */,
+				DDC2E737288EFC4A003EE45B /* Detail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -292,6 +357,7 @@
 				DDE53521288DA4820022C1A3 /* HomeProductsViewController.swift */,
 				DDE53522288DA4820022C1A3 /* HomeProductsWorker.swift */,
 				DDE5352C288DA4830022C1A3 /* HomeProductsPresenter.swift */,
+				DDC2E73F288F045F003EE45B /* HomeProductsRouter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -602,18 +668,25 @@
 				DDE5352F288DA4830022C1A3 /* HomeProductsModel.swift in Sources */,
 				DDE53534288DA4830022C1A3 /* HomeProductsCashTableViewCell.swift in Sources */,
 				DDE5353D288DA48B0022C1A3 /* NetworkingError.swift in Sources */,
+				DDC2E744288F0FF7003EE45B /* HomeProductsDetailRouter.swift in Sources */,
 				DDE5353F288DA48B0022C1A3 /* RequestProviderProtocol.swift in Sources */,
 				DDE5351A288DA4780022C1A3 /* ViewCodable.swift in Sources */,
 				DDE53519288DA4780022C1A3 /* BaseDisplayLogic.swift in Sources */,
+				DDC2E742288F0B9F003EE45B /* HomeProductsDetailModel.swift in Sources */,
 				DDE53533288DA4830022C1A3 /* HomeProductsSpotlightTableViewCell.swift in Sources */,
 				DDE53535288DA4830022C1A3 /* HomeProductsCollectionViewCell.swift in Sources */,
 				DDE534E3288DA3300022C1A3 /* AppDelegate.swift in Sources */,
 				DDE53537288DA4830022C1A3 /* HomeProductsView.swift in Sources */,
 				DDE53538288DA4830022C1A3 /* HomeProductsPresenter.swift in Sources */,
+				DDC2E73E288F0378003EE45B /* HomeProductsDetailViewController.swift in Sources */,
 				DDE5352D288DA4830022C1A3 /* HomeProductsInteractor.swift in Sources */,
+				DDC2E748288F1022003EE45B /* HomeProductsDetailPresenter.swift in Sources */,
+				DDC2E740288F045F003EE45B /* HomeProductsRouter.swift in Sources */,
 				DDE53515288DA46F0022C1A3 /* LoadingDefaultView.swift in Sources */,
 				DDE5352E288DA4830022C1A3 /* HomeProvider.swift in Sources */,
 				DDE53531288DA4830022C1A3 /* HomeProductsWorker.swift in Sources */,
+				DDC2E746288F100D003EE45B /* HomeProductsDetailInteractor.swift in Sources */,
+				DDC2E73A288EFD1F003EE45B /* HomeProductsDetailView.swift in Sources */,
 				DDE53536288DA4830022C1A3 /* HomeProductsSpotilightCollectionViewCell.swift in Sources */,
 				DDE534E5288DA3300022C1A3 /* SceneDelegate.swift in Sources */,
 			);
@@ -623,9 +696,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC2E754288F20DF003EE45B /* HomeProductsDetailViewControllerTestCase.swift in Sources */,
 				DD4CD2B6288DAC520068CD93 /* XCTests+Utils.swift in Sources */,
 				DD0AE2C2288ED08F00918341 /* HomeProductsInteractorFake.swift in Sources */,
 				DD4CD2B7288DAC560068CD93 /* HomeProductsModel+Dummy.swift in Sources */,
+				DDC2E758288F2414003EE45B /* HomeProductDetailPresenterTestCase.swift in Sources */,
 				DDE714E5288ED76800A90BF7 /* HomeProductsInteractorTestCase.swift in Sources */,
 				DD0AE2C4288ED0F000918341 /* HomeProductsWorkerFake.swift in Sources */,
 				DD4CD2B4288DAC460068CD93 /* HomeProductsViewControllerTestCase.swift in Sources */,
@@ -633,6 +708,11 @@
 				DD0AE2C6288ED48200918341 /* HomeProductsPresenterFake.swift in Sources */,
 				DDE714E9288EDFC200A90BF7 /* HomeProductsViewControllerFake.swift in Sources */,
 				DDE714E7288ED79100A90BF7 /* HomeProductsPresenterTestCase.swift in Sources */,
+				DDC2E74C288F1F04003EE45B /* HomeProductsDetailModel+Dummy.swift in Sources */,
+				DDC2E756288F2400003EE45B /* HomeProductsDetailinteractorTestCase.swift in Sources */,
+				DDC2E752288F1F8F003EE45B /* HomeProductsDetailViewControllerFake.swift in Sources */,
+				DDC2E74E288F1F60003EE45B /* HomeProductsDetailInteractorFake.swift in Sources */,
+				DDC2E750288F1F75003EE45B /* HomeProductsDetailPresenterFake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@ class HomeProductsViewControllerFake: HomeProductsDisplayLogic {
     var isHideLoadingCalled = false
     var isDisplayError = false
     var isDisplayHome = false
+    var isDisplayDetails = false
     
     func displayScreenLoading() {
         isDisplayLoadingCalled = true
@@ -30,6 +31,8 @@ class HomeProductsViewControllerFake: HomeProductsDisplayLogic {
         isDisplayHome = true
     }
     
-    
+    func displayDetail(_ detailModel: HomeProductsDetailModel) {
+        self.isDisplayDetails = true
+    }
     
 }

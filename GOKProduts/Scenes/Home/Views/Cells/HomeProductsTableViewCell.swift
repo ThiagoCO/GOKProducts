@@ -8,8 +8,14 @@
 import UIKit
 import SDWebImage
 
+
+protocol HomeProductsCellDelegate {
+    func didSelectProduct(index: Int)
+}
+
 class HomeProductsTableViewCell: UITableViewCell {
     
+    var delegate: HomeProductsCellDelegate?
     var collectionView: UICollectionView!
     var titleLabel: UILabel!
     
@@ -89,6 +95,9 @@ extension HomeProductsTableViewCell: UICollectionViewDelegate, UICollectionViewD
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.didSelectProduct(index: indexPath.row)
+    }
 }
 
 

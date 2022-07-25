@@ -12,6 +12,7 @@ protocol HomeProductsPresentationLogic {
     func hideScreenLoading()
     func presentError(title: String, subtitle: String)
     func presentProducts(homeModel: HomeProductsModel)
+    func presentDetails(detailsModel: HomeProductsDetailModel)
 }
 
 class HomeProductsPresenter: HomeProductsPresentationLogic {
@@ -34,6 +35,10 @@ class HomeProductsPresenter: HomeProductsPresentationLogic {
     
     func presentProducts(homeModel: HomeProductsModel) {
         viewController?.displayHomeProducts(homeModel)
+    }
+    
+    func presentDetails(detailsModel: HomeProductsDetailModel) {
+        viewController?.displayDetail(detailsModel)
     }
     
 }

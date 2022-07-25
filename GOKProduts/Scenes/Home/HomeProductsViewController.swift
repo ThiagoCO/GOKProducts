@@ -7,17 +7,19 @@
 
 import UIKit
 
-protocol HomeProductsDisplayLogic: AnyObject{
+protocol HomeProductsDisplayLogic: AnyObject {
     func displayScreenLoading()
     func hideScreenLoading()
     func displayError(title: String, subtitle: String)
     func displayHomeProducts(_ homeModel: HomeProductsModel)
+    func displayDetail(_ detailModel: HomeProductsDetailModel)
 }
 
 class HomeProductsViewController: UIViewController, BaseDisplayLogic {
     
     var theView: HomeProductsView?
     var interactor: HomeProductsBusinessLogic?
+    var router: (NSObjectProtocol & HomeProductsRoutingLogic & HomeProductsDataPassing)?
     
     init(interactor: HomeProductsBusinessLogic = HomeProductsInteractor()) {
         super.init(nibName: nil, bundle: nil)
@@ -37,18 +39,27 @@ class HomeProductsViewController: UIViewController, BaseDisplayLogic {
         super.loadView()
         theView = HomeProductsView()
         view = theView
+        theView?.delegate = self
         setupInjection()
     }
     
     func setupInjection() {
         let viewController = self
         let presenter = HomeProductsPresenter()
+        let router = HomeProductsRouter()
+        viewController.router = router
         (interactor as? HomeProductsInteractor)?.presenter = presenter
         presenter.viewController = viewController
+        router.viewController = viewController
+        router.dataStore = (interactor as? HomeProductsInteractor)
     }
 }
 
 extension HomeProductsViewController: HomeProductsDisplayLogic {
+    
+    func displayDetail(_ detailModel: HomeProductsDetailModel) {
+        router?.routeToSelected()
+    }
     
     func displayHomeProducts(_ homeModel: HomeProductsModel) {
         theView?.model = homeModel
@@ -69,4 +80,20 @@ extension HomeProductsViewController: HomeProductsDisplayLogic {
         showError(title: title, message: subtitle)
     }
     
+}
+
+extension HomeProductsViewController: HomeProductsViewDelegate {
+    
+    func didSelectSpotlight(index: Int) {
+        interactor?.didSelectSpotlight(index: index)
+    }
+    
+    func didSelectProduct(index: Int) {
+        interactor?.didSelectProduct(index: index)
+    }
+    
+    func didSelectCash() {
+        interactor?.didSelectCash()
+    }
+
 }

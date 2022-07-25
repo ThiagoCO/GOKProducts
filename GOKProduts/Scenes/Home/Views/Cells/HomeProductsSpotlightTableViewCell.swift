@@ -8,8 +8,13 @@
 import UIKit
 import SDWebImage
 
+protocol HomeProductsSpotlightCellDelegate {
+    func didSelectSpotilight(index: Int)
+}
+
 class HomeProductsSpotlightTableViewCell: UITableViewCell {
     
+    var delegateSpotilight: HomeProductsSpotlightCellDelegate?
     var collectionView: UICollectionView!
     var spotlightModels: [Spotlight] = []
     
@@ -69,6 +74,9 @@ extension HomeProductsSpotlightTableViewCell: UICollectionViewDelegate, UICollec
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegateSpotilight?.didSelectSpotilight(index: indexPath.row)
+    }
 }
 
 

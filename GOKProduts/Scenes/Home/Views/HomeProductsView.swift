@@ -7,11 +7,17 @@
 
 import UIKit
 
+protocol HomeProductsViewDelegate {
+    func didSelectSpotlight(index: Int)
+    func didSelectProduct(index: Int)
+    func didSelectCash()
+}
+
 class HomeProductsView: UIView {
     
+    var delegate: HomeProductsViewDelegate?
     var tableView: UITableView
     var titleLabel: UILabel
-    
     var model: HomeProductsModel?
     
     override init(frame: CGRect) {
@@ -46,6 +52,7 @@ extension HomeProductsView: UITableViewDelegate, UITableViewDataSource {
             let cell = HomeProductsSpotlightTableViewCell()
             cell.configure(spotlightModels: model.spotlight)
             cell.selectionStyle = .none
+            cell.delegateSpotilight = self
             return cell
         case 1:
             let cell = HomeProductsCashTableViewCell()
@@ -56,9 +63,15 @@ extension HomeProductsView: UITableViewDelegate, UITableViewDataSource {
             let cell = HomeProductsTableViewCell()
             cell.configure(productModels: model.products)
             cell.selectionStyle = .none
+            cell.delegate = self
             return cell
         }
-      
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 1 {
+            delegate?.didSelectCash()
+        }
     }
     
 }
@@ -104,6 +117,22 @@ extension HomeProductsView: ViewCodable {
         titleLabel.textAlignment = .justified
         titleLabel.numberOfLines = 0
         titleLabel.text = "Olá, Maria"
+    }
+    
+}
+
+extension HomeProductsView: HomeProductsSpotlightCellDelegate {
+    
+    func didSelectSpotilight(index: Int) {
+        delegate?.didSelectSpotlight(index: index)
+    }
+    
+}
+
+extension HomeProductsView: HomeProductsCellDelegate {
+    
+    func didSelectProduct(index: Int) {
+        delegate?.didSelectProduct(index: index)
     }
     
 }

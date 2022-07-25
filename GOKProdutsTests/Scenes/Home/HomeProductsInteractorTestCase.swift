@@ -43,4 +43,29 @@ class HomeProductsInteractorTestCase: XCTestCase {
         XCTAssertTrue(presenterFake.isHideLoadingCalled)
         XCTAssertTrue(presenterFake.isErrorCalled)
     }
+    
+    func testDidSelectSpotlight() {
+        sut.model = HomeProductsModel.dummy()
+        sut.didSelectSpotlight(index: 0)
+        XCTAssertEqual(presenterFake.detailModel?.title, "Recarga")
+        XCTAssertEqual(presenterFake.detailModel?.imageURL, "https://s3-sa-east-1.amazonaws1.com/digio-exame/recharge_banner.png")
+        XCTAssertEqual(presenterFake.detailModel?.description, "description")
+    }
+    
+    func testDidSelectProduct() {
+        sut.model = HomeProductsModel.dummy()
+        sut.didSelectProduct(index: 0)
+        XCTAssertEqual(presenterFake.detailModel?.title, "XBOX")
+        XCTAssertEqual(presenterFake.detailModel?.imageURL, "https://s3-sa-east-1.amazonaws1.com/digio-exame/xbox_icon.png")
+        XCTAssertEqual(presenterFake.detailModel?.description, "Description")
+    }
+    
+    func testDidSelectCash() {
+        sut.model = HomeProductsModel.dummy()
+        sut.didSelectCash()
+        XCTAssertEqual(presenterFake.detailModel?.title, "digio Cash")
+        XCTAssertEqual(presenterFake.detailModel?.imageURL, "https://s3-sa-east-1.amazonaws1.com/digio-exame/cash_banner.png")
+        XCTAssertEqual(presenterFake.detailModel?.description, "Description")
+    }
+    
 }
