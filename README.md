@@ -26,7 +26,7 @@ Modulo core para a arquitetura modular do projeto Liveness2D e Liveness3D
 - No arquivo Podfile alterar para ```pod OICommons/Debug```
 - pod install no projeto de exemplo
 - Buildar o projeto a partir do exemplo
-- Na pasta products terá o xcframework, copie ele e cole na pasta Framework na raiz do projeto
+- Na pasta products terá o ```OICommons.xcframework```, copie ele e cole na pasta ```Framework``` na raiz do projeto
 - Criar uma PR para a branch main com o novo conteudo desenvolvido
 - Após mergeado a PR criar uma nova Tag no git a partir da branch Main
 - Vá no podspec na pasta OICommons e crie uma pasta com o numero da sua tag criada
