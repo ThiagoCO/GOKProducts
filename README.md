@@ -1,8 +1,8 @@
-# OICommons
+# OINetwork
 
 # Introdução: 
 
-Modulo core para a arquitetura modular do projeto Liveness2D e Liveness3D   
+Modulo network para a arquitetura modular do projeto Liveness2D e Liveness3D   
 
 ## Conteudo do modulo
 
@@ -20,21 +20,21 @@ Modulo core para a arquitetura modular do projeto Liveness2D e Liveness3D
 1. Instale o CocoaPods caso não tenha instalado: https://cocoapods.org/
 2. Vá até a pasta do projeto de exemplo pelo terminal (a pasta que tem o arquivo `Podfile`)
 3. Digite: `pod install`
-4. Pronto. Agora basta abrir o projeto no XCode pelo arquivo **`OICommons.xcworkspace`**
+4. Pronto. Agora basta abrir o projeto no XCode pelo arquivo **`OINetwork.xcworkspace`**
 
 ## Instruçōes para gerar uma nova versão do modulo
-- No arquivo Podfile alterar para ```pod OICommons/Debug```
+- No arquivo Podfile alterar para OINetwork/Debug
 - pod install no projeto de exemplo
 - Buildar o projeto a partir do exemplo
-- Na pasta products terá o ```OICommons.xcframework```, copie ele e cole na pasta ```Framework``` na raiz do projeto
+- Na pasta products terá o xcframework, copie ele e cole na pasta Framework na raiz do projeto
 - Criar uma PR para a branch main com o novo conteudo desenvolvido
 - Após mergeado a PR criar uma nova Tag no git a partir da branch Main
-- Vá no podspec na pasta OICommons e crie uma pasta com o numero da sua tag criada
-- Atualize o OICommons.podspec para a versão respectiva
+- Vá no podspec na pasta OINetwork e crie uma pasta com o numero da sua tag criada
+- Atualize o OINetwork.podspec do podspec para a versão respectiva
 
 ## Dependências
- - OICommons não possui dependencias
+ - OICommons
  
  ## Colaboradores
  - Thiago Cavalcante de Oliveira
- - Vitor Souza
+ - Vitor
